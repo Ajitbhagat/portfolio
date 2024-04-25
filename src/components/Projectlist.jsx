@@ -38,6 +38,10 @@ const Projectlist = () => {
         <h2 className="dec_pro" >Portfolio</h2>
         <span className="dec_pro" >React js</span>
       </div>
+      <div className="box_1" data-aos="zoom-in-right">
+        <h2 className="dec_pro" >E-commerce</h2>
+        <span className="dec_pro" >React js</span>
+      </div>
       <div className="box_1" data-aos="zoom-in-down">
         <h2 className="dec_pro" >Responsive website</h2>
       </div>
