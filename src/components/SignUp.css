@@ -1,0 +1,32 @@
+.login_home .info_text.register {
+  left: 0;
+  text-align: left;
+  padding: 0 150px 60px 40px;
+}
+
+.login_home .form_box.register {
+  right: 0;
+  padding: 0 40px 0 60px;
+}
+
+.login_home .bg-animate2 {
+  position: absolute;
+  top: 100%;
+  left: 250px;
+  width: 850px;
+  height: 700px;
+  background: #081b29;
+  border-top: 3px solid #0ef;
+  background: linear-gradient(45deg, #0ef, #081b29);
+  transform: rotate(-11deg) skewY(-41deg);
+  transform-origin: bottom left;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .login_home .bg-animate2 {
+    display: none;
+  }
+  .login_home .info_text.register {
+    display: none;
+  }
+}

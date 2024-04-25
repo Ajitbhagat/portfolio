@@ -1,0 +1,253 @@
+.login_ma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #081b29;
+}
+.login_home {
+  position: relative;
+  /* width: 740px; */
+  /* height: 450px; */
+  width: 46.25rem;
+  height: 28.125rem;
+  background: transparent;
+  border: 2px solid #0ef;
+  box-shadow: 0 0 1.563rem #0ef;
+  overflow: hidden;
+}
+
+.login_home .form_box {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* outline: auto; */
+}
+.login_home .form_box.login {
+  left: 0;
+  padding: 0 3.75rem 0 2.5rem;
+}
+
+.form_box h2 {
+  font-size: 2.188rem;
+  color: #fff;
+  text-align: center;
+  /* outline: auto; */
+}
+
+.form_box .input_box {
+  position: relative;
+  width: 100%;
+  height: 3.125rem;
+  /* background: seagreen; */
+  margin: 1.563rem 0;
+  /* outline: auto; */
+}
+.input_box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 0.125rem solid #fff;
+  padding-right: 1.438rem;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.5s;
+ 
+}
+
+.input_box input:focus,
+.input_box input:valid {
+  border-bottom-color: #0ef;
+}
+
+.input_box label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.input_box input:focus ~ label,
+.input_box input:valid ~ label {
+  top: -0.313rem;
+  color: #fff;
+}
+
+.input_box .icon_login {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 1.125rem;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.input_box input:focus ~ .icon_login,
+.input_box input:valid ~ .icon_login {
+  color: #0ef;
+}
+
+.btn_login {
+  position: relative;
+  width: 100%;
+  height: 2.813rem;
+  background: transparent;
+  border: 0.125rem solid #0ef;
+  outline: none;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn_login::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  z-index: -1;
+  background: linear-gradient(#081b29, #0ef, #081b29, #0ef);
+}
+.btn_login:hover::before {
+  top: 0;
+}
+.logreg_link {
+  color: #fff;
+  text-align: center;
+  margin: 1.25rem 0 0.625rem;
+}
+.logreg_link p {
+  font-size: 1rem;
+}
+.logreg_link p a {
+  color: #0ef;
+  text-decoration: none;
+  font-weight: 600;
+}
+.logreg_link p a:hover {
+  text-decoration: underline;
+}
+
+.login_home .info_text {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login_home .info_text.login {
+  right: 0;
+  text-align: right;
+  padding: 0 2.5rem 3.75rem 9.375rem;
+  /* display: none; */
+}
+
+.info_text h2 {
+  font-size: 2.25rem;
+  color: #fff;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.info_text p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.login_home .bg-animate {
+  position: absolute;
+  top: -0.25rem;
+  right: 0;
+  width: 53.125rem;
+  height: 37.5rem;
+  background: linear-gradient(45deg, #081b29, #0ef);
+  border-bottom: 3px solid #0ef;
+  transform: rotate(10deg) skewY(40deg);
+  /* transform: rotate(0) skewY(0); */
+  transform-origin: bottom right;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .login_home {
+    width: 80%;
+  }
+
+  .login_home .bg-animate {
+    display: none;
+  }
+  .login_home .info_text.login {
+    display: none;
+  }
+
+  .login_home .form_box {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    
+  }
+  .logreg_link p {
+    font-size: .89rem;
+ 
+    
+  }
+}
+/* @media screen and (min-width: 300px) and (max-width: 700px) {
+  .login_home {
+    
+    width: 90%;
+    height: 80vh;
+    outline: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .login_home .form_box {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    outline: auto;
+    /* display: flex; */
+/* flex-direction: column; */
+/* }
+  .form_box .input_box {
+    outline: auto;
+  }
+  .input_box label {
+    outline: auto;
+  }
+  .login_home .info_text {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    outline: auto;
+    position: absolute;
+    top: 0;
+    display: flex;
+  }
+
+
+} */
+
+/* 19.40
+  https://youtu.be/mefhyo7W3nk?feature=shared
+  */

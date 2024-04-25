@@ -1,0 +1,86 @@
+.label_con {
+  color: white;
+  margin: bottom 0.5rem;
+}
+
+.form_con {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1rem;
+  margin: auto;
+  max-width: 600px;
+
+}
+.form_con .input_con,
+.form_con .text_con {
+  margin-bottom: 1rem;
+  padding: 10px 18px;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+  /* color: #f4f4f4; */
+  color: #fff;
+ 
+}
+.form {
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: black; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/background.jpeg");
+    -webkit-animation: slidein_f 100s;
+    animation: slidein_f 200s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+
+@-webkit-keyframes slidein_f {
+  from {
+    background-position: bottom;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+@keyframes slidein_f {
+  from {
+    background-position: bottom;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+
+
+
+
+
+/* form_m {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+ outline: auto;
+  justify-content: space-around;
+}
+.left_f{
+    width: 50%;
+    height: 90vh;
+    outline: auto; 
+}
+.right_f{
+    width: 50%;
+    height: 90vh;
+ outline: auto; 
+} */

@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  z-index: 10;
+}
+
+.header-bg {
+  /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+.nav-menu {
+  align-items: center;
+  /* outline: auto; */
+  display: flex;
+}
+.nav-menu li {
+  padding: 0 1.5rem;
+}
+.nav-menu li a {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  /* background-color: #9dde05eb; */
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.nav-menu li a:hover {
+  color: #ffee10;
+  
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+  background-color: #fff;
+}
+.logo:hover {
+  width: 150px;
+}
+.logo .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.logo:nth-child(1):hover .icon {
+  /* background: #4267B2; */
+  background: #fff;
+  /* background: transparent; */
+}
+
+.logo .icon img {
+  width: 60px;
+  height: 60px;
+  /* font-size: 25px; */
+  /* line-height: 60px; */
+  transition: all 0.3s ease-out;
+}
+
+.logo span {
+  font-size: 20px;
+  /* font-weight: 500; */
+  /* line-height: 60px; */
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+  /* outline: auto; */
+}
+
+.logo:nth-child(1) span {
+  color: #4267b2;
+  /* color: #AF2741; */
+  /* color: #F5F5F5; */
+}
+
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1040px) {
+  .nav-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -3;
+    transition: 0.3s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu li {
+    padding: 1rem 0;
+  }
+
+  .nav-menu li a {
+    font-size: 2rem;
+  }
+
+  .hamburger {
+    display: initial;
+  }
+}
