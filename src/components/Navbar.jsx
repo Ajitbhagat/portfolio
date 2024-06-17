@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </li>
         <button className={'btn'}>
-          <Link to="/register">Click me</Link>
+          <Link to="https://production-mern-ecommerce-app-24.vercel.app/">Click me</Link>
         </button>
       </ul>
 

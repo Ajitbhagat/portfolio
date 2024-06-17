@@ -4,6 +4,7 @@ import {
   FaFacebook,
   FaGithub,
   FaHome,
+  FaWhatsapp,
   FaLinkedin,
   FaMailBulk,
   FaPhone,
@@ -110,6 +111,20 @@ const Footer = () => {
             </div>
 
             <div className=" icon_social twitter">
+              <Tippy content="Whatsapp">
+                <span>
+                  <a href="https://wa.me/+916291697254">
+                    <FaWhatsapp 
+                      size={30}
+                      style={{ color: "white", marginRight: "1rem" }}
+                    />
+                  </a>
+                </span>
+              </Tippy>
+            </div>
+
+
+            {/* <div className=" icon_social twitter">
               <Tippy content="LinkedIn">
                 <span>
                   <a href="https://www.linkedin.com/in/ajitbhagat/">
@@ -120,7 +135,7 @@ const Footer = () => {
                   </a>
                 </span>
               </Tippy>
-            </div>
+            </div> */}
           </div>
           <div className="web_counter">
             <h2>Visits</h2>

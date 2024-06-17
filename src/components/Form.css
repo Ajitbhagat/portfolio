@@ -11,6 +11,17 @@
   max-width: 600px;
 
 }
+
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #fff;
+} 
+
+
 .form_con .input_con,
 .form_con .text_con {
   margin-bottom: 1rem;

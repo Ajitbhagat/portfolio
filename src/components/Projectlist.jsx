@@ -16,23 +16,23 @@ const Projectlist = () => {
       <h1 className="about pro">Project</h1>
       <div className="box_1" data-aos="zoom-in">
         <h2 className="dec_pro" >EILTTE ATTENDANCE SYSTEM</h2>
-        <span className="dec_pro" >Android Studio Platform Tools</span>
+        <span className="dec_pro" >Java || Android Studio Platform Tools</span>
       </div>
       <div className="box_1" data-aos="fade-left">
         <h2 className="dec_pro" >HOSPITAL MANAGEMENT APPLICATION</h2>
-        <span className="dec_pro" >Android Studio Platform Tools</span>
+        <span className="dec_pro" >Java || Android Studio Platform Tools</span>
       </div>
       <div className="box_1" data-aos="zoom-in-right">
         <h2 className="dec_pro" >Chat Apps</h2>
-        <span className="dec_pro" >Android Studio Platform Tools</span>
+        <span className="dec_pro" >Java || Android Studio Platform Tools</span>
       </div>
       <div className="box_1" data-aos="fade-up">
         <h2 className="dec_pro" >Crud Project</h2>
-        <span className="dec_pro">React Js</span>
+        <span className="dec_pro">React Js || Json</span>
       </div>
       <div className="box_1" data-aos="fade-down">
         <h2  className="dec_pro" >Crud Project</h2>
-        <span className="dec_pro" >Java Database Connectivity</span>
+        <span className="dec_pro" >Java Database Connectivity || SQL</span>
       </div>
       <div className="box_1" data-aos="zoom-in-left">
         <h2 className="dec_pro" >Portfolio</h2>
@@ -40,7 +40,7 @@ const Projectlist = () => {
       </div>
       <div className="box_1" data-aos="zoom-in-right">
         <h2 className="dec_pro" >E-commerce</h2>
-        <span className="dec_pro" >React js</span>
+        <span className="dec_pro" >React js || node js || MongoDB</span>
       </div>
       <div className="box_1" data-aos="zoom-in-down">
         <h2 className="dec_pro" >Responsive website</h2>
