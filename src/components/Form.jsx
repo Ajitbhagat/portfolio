@@ -11,24 +11,42 @@ const Form = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_cxf70ui",
-        "template_clvwb6d",
-        form.current,
-        "MiIWVVc79_YzLTg-O"
-      )
+  //   emailjs
+  //     .sendForm(
+  //       "service_cxf70ui",
+  //       "template_clvwb6d",
+  //       form.current,
+  //       "MiIWVVc79_YzLTg-O"
+  //     )
+  //     .then(
+  //       () => {
+  //         alert("Message Sent.");
+  //       },
+  //       (error) => {
+  //         alert("Message failed to send.");
+  //       }
+  //     );
+  //   e.target.reset();
+  // };
+const YOUR_PUBLIC_KEY = "FPbcflWa1Zp-yqO6z";
+    const YOUR_SERVICE_ID = "service_cxf70ui";
+    const YOUR_TEMPLATE_ID = "template_clvwb6d";
+
+      emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
       .then(
         () => {
-          alert("Message Sent.");
+          console.log('SUCCESS!');
         },
         (error) => {
-          alert("Message failed to send.");
-        }
+          console.log('FAILED...', error.text);
+        },
       );
-    e.target.reset();
   };
 
+    
   return (
     <div className="form">
       <h1 className="project-heading">Contact</h1>
