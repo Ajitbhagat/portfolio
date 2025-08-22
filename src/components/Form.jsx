@@ -28,8 +28,8 @@ const Form = () => {
   //     );
   //   e.target.reset();
   // };
-const YOUR_PUBLIC_KEY = "FPbcflWa1Zp-yqO6z";
-    const YOUR_SERVICE_ID = "service_cxf70ui";
+const YOUR_PUBLIC_KEY = "FPbcflWa1Zp-yqO6z"; 
+    const YOUR_SERVICE_ID = "service_5799d99";
     const YOUR_TEMPLATE_ID = "template_clvwb6d";
 
       emailjs
@@ -38,10 +38,12 @@ const YOUR_PUBLIC_KEY = "FPbcflWa1Zp-yqO6z";
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          // console.log('SUCCESS!');
+          alert("Message Sent.");
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          // console.log('FAILED...', error.text);
+                   alert("Message failed to send.");
         },
       );
   };
