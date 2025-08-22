@@ -28,25 +28,45 @@ const Form = () => {
   //     );
   //   e.target.reset();
   // };
-const YOUR_PUBLIC_KEY = "FPbcflWa1Zp-yqO6z"; 
-    const YOUR_SERVICE_ID = "service_5799d99";
-    const YOUR_TEMPLATE_ID = "template_clvwb6d";
 
-      emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
-      })
+  emailjs
+      .sendForm(
+        "service_5799d99",
+        "template_clvwb6d",
+        form.current,
+        "FPbcflWa1Zp-yqO6z"
+      )
       .then(
         () => {
-          // console.log('SUCCESS!');
           alert("Message Sent.");
         },
         (error) => {
-          // console.log('FAILED...', error.text);
-                   alert("Message failed to send.");
-        },
+          alert("Message failed to send.");
+        }
       );
+    e.target.reset();
   };
+
+    
+// const YOUR_PUBLIC_KEY = "FPbcflWa1Zp-yqO6z"; 
+//     const YOUR_SERVICE_ID = "service_5799d99";
+//     const YOUR_TEMPLATE_ID = "template_clvwb6d";
+
+//       emailjs
+//       .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+//         publicKey: 'YOUR_PUBLIC_KEY',
+//       })
+//       .then(
+//         () => {
+//           // console.log('SUCCESS!');
+//           alert("Message Sent.");
+//         },
+//         (error) => {
+//           // console.log('FAILED...', error.text);
+//                    alert("Message failed to send.");
+//         },
+//       );
+//   };
 
     
   return (
