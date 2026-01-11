@@ -3,6 +3,10 @@
   margin: bottom 0.5rem;
 }
 
+ .asterisk , .error {
+        color: red;
+  }
+
 .form_con {
   display: flex;
   flex-direction: column;
@@ -71,9 +75,7 @@
     background-size: 2750px;
   }
 }
- .asterisk , .error {
-        color: red;
-      }
+
 
 
 
