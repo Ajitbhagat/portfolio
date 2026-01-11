@@ -3,12 +3,10 @@
   margin: bottom 0.5rem;
 }
 
- .asterisk {
+.asterisk {
       color: red;
-  }
-.error {
-      color: red;
-  }
+}
+
 
 .form_con {
   display: flex;
