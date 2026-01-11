@@ -71,7 +71,9 @@
     background-size: 2750px;
   }
 }
-
+ .asterisk , .error {
+        color: red;
+      }
 
 
 
