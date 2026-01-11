@@ -87,7 +87,8 @@ const Form = () => {
       </div>
 
       <div className="right_f"> */}
-      <form className="form_con" action="" ref={form} onSubmit={sendEmail}>
+      
+      {/* <form className="form_con" action="" ref={form} onSubmit={sendEmail}>
         <label className="label_con">Your Name</label>
         <input
         className="input_con"
@@ -128,7 +129,52 @@ const Form = () => {
           required
         ></textarea>
         <button className="btn">Submit</button>
-      </form>
+      </form> */}
+      {/* new code update*/}
+       <form className="form_con" action="" ref={form} onSubmit={sendEmail}>
+      <label for="name">Name<span class="asterisk">*</span></label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your Name"
+        autocomplete="off"
+      />
+      <div class="error" id="nameError"></div>
+      <label for="email">Email ID <span class="asterisk">*</span></label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Enter Email Address"
+        autocomplete="off"
+      />
+      <div class="error" id="emailError"></div>
+      <label for="subject">Subject<span class="asterisk">*</span></label>
+      <input
+        type="text"
+        id="subject"
+        name="subject"
+        placeholder="Enter the Subject"
+        autocomplete="off"
+      />
+      <div class="error" id="subjectError"></div>
+      <label for="comments">
+        Enter Your Query <span class="asterisk">*</span>
+        <span id="charCount">300 Characters Remaining</span>
+      </label>
+      <textarea
+        name="comments"
+        id="comments"
+        placeholder="Enter Your Query"
+        oninput="updateCommentField()"
+        onkeydown="filterAlphanumeric(event)"
+        onpaste="blockPaste(event)"
+        autocomplete="off"
+      ></textarea>
+      <div class="error" id="commentsError"></div>
+          <button className="btn">Submit</button>
+    </form>
       </div>
     // </div>
     // </div>
