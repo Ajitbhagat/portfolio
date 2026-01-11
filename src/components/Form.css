@@ -3,7 +3,10 @@
   margin: bottom 0.5rem;
 }
 
- .asterisk , .error {
+ .asterisk {
+      color: red;
+  }
+.error {
       color: red;
   }
 
